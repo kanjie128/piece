@@ -1,0 +1,8 @@
+syntax = "proto3";
+package tencent.im.msg;
+option go_package = "tencent/im/msg";
+
+message head
+{
+   uint32 type = 1;
+};

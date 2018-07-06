@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+GetObj	objpool.h	/^        static datatype GetObj(Args&&...args) {$/;"	f	class:ObjPool
+ObjPool	objpool.h	/^class ObjPool{$/;"	c
+PoolSize	objpool.h	/^        static int PoolSize(){$/;"	f	class:ObjPool
+SetObj	objpool.h	/^        static void SetObj(T* t){$/;"	f	class:ObjPool
+a	atexit.cc	/^    a(){$/;"	f	class:a
+a	atexit.cc	/^class a{$/;"	c	file:
+b	atexit.cc	/^        b(){$/;"	f	struct:a::b
+b	atexit.cc	/^    struct b{$/;"	s	class:a	file:
+c	atexit.cc	/^        c(){$/;"	f	struct:a::c
+c	atexit.cc	/^    struct c{$/;"	s	class:a	file:
+cb	atexit.cc	/^    static b cb;$/;"	m	class:a	file:
+cb	atexit.cc	/^a::b a::cb;$/;"	m	class:a	file:
+cc	atexit.cc	/^    static c cc;$/;"	m	class:a	file:
+cc	atexit.cc	/^a::c a::cc;$/;"	m	class:a	file:
+d	main.cc	/^        int d;$/;"	m	class:foo	file:
+destroy_	objpool.h	/^        static int destroy_;$/;"	m	class:ObjPool
+destroy_	objpool.h	/^int ObjPool<T>::destroy_ = 0;$/;"	m	class:ObjPool
+destroyatexit	objpool.h	/^            destroyatexit(){$/;"	f	struct:ObjPool::destroyatexit
+destroyatexit	objpool.h	/^        struct destroyatexit{$/;"	s	class:ObjPool
+dt_	objpool.h	/^        static destroyatexit dt_;$/;"	m	class:ObjPool
+dt_	objpool.h	/^typename ObjPool<T>::destroyatexit ObjPool<T>::dt_;\/\/must at last line$/;"	m	class:ObjPool
+f	atexit.cc	/^void f(){$/;"	f
+foo	main.cc	/^        foo(int i):d(i){}$/;"	f	class:foo
+foo	main.cc	/^class foo : public ObjPool<foo>{$/;"	c	file:
+main	atexit.cc	/^int main(){$/;"	f
+main	main.cc	/^int main(){$/;"	f
+pool	objpool.h	/^        static std::list<datatype> pool;$/;"	m	class:ObjPool
+pool	objpool.h	/^std::list<typename ObjPool<T>::datatype> ObjPool<T>::pool;$/;"	m	class:ObjPool
+print	main.cc	/^        void print(){$/;"	f	class:foo
+setdestroy	objpool.h	/^        static void setdestroy(void){$/;"	f	class:ObjPool
+~a	atexit.cc	/^    ~a(){$/;"	f	class:a
+~b	atexit.cc	/^        ~b(){$/;"	f	struct:a::b
+~c	atexit.cc	/^        ~c(){$/;"	f	struct:a::c
+~destroyatexit	objpool.h	/^            ~destroyatexit(){$/;"	f	struct:ObjPool::destroyatexit
+~foo	main.cc	/^        ~foo(){$/;"	f	class:foo
