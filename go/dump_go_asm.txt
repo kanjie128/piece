@@ -1,0 +1,2 @@
+//go tool objdump -s function binary
+go tool objdump -s main func

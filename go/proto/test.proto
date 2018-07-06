@@ -1,6 +1,6 @@
 syntax = "proto3";
-package tencent.im.msg;
-option go_package = "tencent/im/msg";
+package this.is.proto3;
+option go_package = "this/is/proto3";
 
 message head
 {
