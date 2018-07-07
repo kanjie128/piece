@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<note>
+	<fromName>abc</fromName>
+	<toName>sz</toName>
+	<sendTime>12345</sendTime>
+	<msgContent>msg</msgContent>
+</note>
