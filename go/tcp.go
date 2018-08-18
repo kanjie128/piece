@@ -3,14 +3,14 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net"
-    _ "time"
-    "log"
+	_ "time"
 )
 
 func handleConn(c net.Conn) {
 	defer c.Close()
-	fmt.Printf("recv conn:%v, %v\n", c.LocalAddr().String(), c.RemoteAddr().String())
+	fmt.Printf("recv conn, Local:%v <-- remove:%v\n", c.LocalAddr().String(), c.RemoteAddr().String())
 	for {
 		// read from the connection
 		var buf = make([]byte, 65536)
@@ -37,7 +37,7 @@ func main() {
 		fmt.Println("listen error:", err)
 		return
 	}
-    fmt.Printf("listen:%v", l.Addr())
+	fmt.Printf("listen:%v", l.Addr())
 	for {
 		c, err := l.Accept()
 		if err != nil {
