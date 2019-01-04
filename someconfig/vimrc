@@ -380,11 +380,8 @@ let Tlist_Enable_Fold_Column = 0
 
 let Tlist_GainFocus_On_ToggleOpen = 1
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
-" Leckiewang自定义映射/脚本
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " 为Project和Tlist插件自定义映射
-map ,t :Tlist<CR>
+"map ,t :Tlist<CR>
 map ,p :Project<CR>
 map ,P :Project<CR> :wq<CR>
 "nerdTree
