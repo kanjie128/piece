@@ -1,0 +1,3 @@
+[submodule "go_repo"]
+	path = go_repo
+	url = https://github.com/kanjie128/go_repo.git
