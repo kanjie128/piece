@@ -5,8 +5,8 @@ cp ./vimrc ~/.vimrc
 
 #config .vim
 tar zxvf vim.tgz
-cp ./root/.vim ~/.vim -R
-rm ./root -rf
+cp ./.vim ~/.vim -R
+rm ./.vim -rf
 
 #install ctags
 tar zxvf ctags-5.8.tgz
@@ -30,7 +30,8 @@ go get -u github.com/fatih/motion
 go get -u github.com/kisielk/errcheck
 go get -u github.com/derekparker/delve/cmd/dlv
 #go get -u github.com/nsf/gocode
-go get -u github.com/stamblerre/gocode
-
+go get -u github.com/stamblerre/gocode #support go mod
+go get -u github.com/jstemmer/gotags
+go get golang.org/x/tools/cmd/goimports
 
 
